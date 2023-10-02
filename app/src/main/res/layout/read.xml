@@ -75,7 +75,8 @@
         android:id="@+id/scrollView3"
         android:layout_width="409dp"
         android:layout_height="659dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -113,6 +114,16 @@
                 android:layout_marginRight="8dp"
                 android:text="Chapter"
                 android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/commentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter to Comment"
+                android:inputType="text"
+                android:textColor="@color/white"
+                tools:textColorHint="@color/white" />
 
         </LinearLayout>
     </ScrollView>

@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Novel World</string>
     <string name="share_this_text_with">"Share this text with: "</string>
-    <string name="novel1_title">Title: sample lang ites</string>
+    <string name="novel1_title">The War of Swords</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -38,7 +38,7 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
-    <string name="novel2_title">edi number 2</string>
+    <string name="novel2_title">Hamlet</string>
     <string name="novel2_chapter">
         wtf
         /n/n
@@ -77,4 +77,6 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="novel3_title">Charles Dickens</string>
+    <string name="novel4_title">The Golden Age</string>
 </resources>
