@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#702a2f">
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <ImageButton
+        android:id="@+id/heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/commentBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space"
+        app:srcCompat="@drawable/heart"
+        android:onClick="heartClk"/>
+
+    <ImageButton
+        android:id="@+id/commentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/share"
+        app:layout_constraintStart_toEndOf="@+id/heart"
+        app:layout_constraintTop_toBottomOf="@+id/space"
+        app:srcCompat="@drawable/chat"
+        android:onClick="comClk"/>
+
+    <ImageButton
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/web"
+        app:layout_constraintStart_toEndOf="@+id/commentBtn"
+        app:layout_constraintTop_toBottomOf="@+id/space"
+        app:srcCompat="@drawable/share"
+        android:onClick="shareClk"/>
+
+    <ImageButton
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space"
+        app:srcCompat="@drawable/internet"
+        android:onClick="webClk"/>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="409dp"
+        android:layout_height="659dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/novelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baumans"
+                android:gravity="center"
+                android:text="Title"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/novelPic"
+                android:layout_width="393dp"
+                android:layout_height="150sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16sp"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/novelChap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginRight="8dp"
+                android:text="Chapter"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
